@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.9.21"
+    kotlin("jvm") version "2.2.0"
     application
 }
 
@@ -14,7 +14,7 @@ dependencies {
     implementation("io.ktor:ktor-server-metrics-micrometer:2.3.9")
     implementation("io.micrometer:micrometer-registry-prometheus:1.12.3")
     implementation("io.lettuce:lettuce-core:6.7.1.RELEASE")
-    implementation("ch.qos.logback:logback-classic:1.4.11")
+    implementation("ch.qos.logback:logback-classic:1.5.13")
 }
 
 application {

@@ -5,5 +5,5 @@ RUN gradle installDist
 
 FROM eclipse-temurin:21-jre
 WORKDIR /app
-COPY --from=build /app/build/install/your-app-name/ ./
-CMD ["bin/your-app-name"]
+COPY --from=build /app/build/install/dev/ ./
+CMD ["bin/dev"]
